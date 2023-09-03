@@ -4,9 +4,9 @@
 }
 
 .slider{
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
-    background: #666;
+    background: #666; */
 }
 .section-border{
     background: #999;
@@ -26,3 +26,45 @@
 .service-item h1{
     color: greenyellow;
 }
+
+/* .carousel-caption {
+    position: relative;
+    right: auto;
+    left: auto;
+    padding: 0px;
+} */
+.caption {
+    text-align: center;
+    color: white;
+}
+.slider-desktop  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+
+}
+
+.slider-mobile {
+    display: none;
+    width: 100vw;
+    height: 95vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+@media (max-width: 768px) {
+    .slider-mobile{
+        display: block;
+        
+    }
+    .slider-desktop {
+        display: none;
+    }
+}
+
